@@ -28,7 +28,7 @@
                 <div class="col-lg-4 ">
                     <div class="text-container text-center mb-6">
                         <h2> PASLON 01 </h2>
-                        <img src=" <?php echo base_url('nubis/images/paslon1.png') ?> " class="img-fluid" alt="">
+                        <img src=" <?php echo base_url('nubis/images/paslon_1_2026.png') ?> " class="img-fluid" alt="">
                         <br>
                         <br>
                         <h1 class="h1-large" style="color:black;"> 
@@ -45,7 +45,7 @@
                 <div class="col-lg-4 mt-10">
                     <div class="text-container text-center mb-6">
                         <h2> PASLON 02 </h2>
-                        <img src=" <?php echo base_url('nubis/images/paslon2.png') ?> " class="img-fluid" alt="">
+                        <img src=" <?php echo base_url('nubis/images/paslon_2_2026.png') ?> " class="img-fluid" alt="">
                         <br>
                         <br>
                         <h1 class="h1-large" style="color:black;"> 
@@ -61,7 +61,7 @@
               	<div class="col-lg-4 mt-10">
                     <div class="text-container text-center mb-6">
                         <h2> PASLON 03 </h2>
-                        <img src=" <?php echo base_url('nubis/images/paslon3.png') ?> " class="img-fluid" alt="">
+                        <img src=" <?php echo base_url('nubis/images/paslon_3_2026.png') ?> " class="img-fluid" alt="">
                         <br>
                         <br>
                         <h1 class="h1-large" style="color:black;"> 
