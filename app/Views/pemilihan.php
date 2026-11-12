@@ -21,7 +21,7 @@
         <div class="row">
             <div class="col-lg-4">
                 <div class="text-container text-center mb-6">
-                    <img src=" <?php echo base_url('nubis/images/paslon1.png') ?> " width="400px" alt="" class="img-fluid">
+                    <img src=" <?php echo base_url('nubis/images/paslon_1_2026.png') ?> " width="400px" alt="" class="img-fluid">
                     <br>
                     <br>
                     <form action="/Home/pilihan" method="POST">
@@ -37,7 +37,7 @@
 
             <div class="col-lg-4 mt-10">
                 <div class="text-container text-center">
-                    <img src="<?php echo base_url('nubis/images/paslon2.png') ?> " width="400px" alt="" class="img-fluid">
+                    <img src="<?php echo base_url('nubis/images/paslon_2_2026.png') ?> " width="400px" alt="" class="img-fluid">
                     <br>
                     <br>
                     <form action="/Home/pilihan" method="POST">
@@ -50,7 +50,7 @@
           
           	<div class="col-lg-4 mt-10">
                 <div class="text-container text-center">
-                    <img src="<?php echo base_url('nubis/images/paslon3.png') ?>" width="400px" alt="" class="img-fluid">
+                    <img src="<?php echo base_url('nubis/images/paslon_3_2026.png') ?>" width="400px" alt="" class="img-fluid">
                     <br>
                     <br>
                     <form action="/Home/pilihan" method="POST">
