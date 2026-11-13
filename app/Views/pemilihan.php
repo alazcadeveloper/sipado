@@ -1,6 +1,32 @@
 <?= $this->extend('/template/layout1') ?>
 <?= $this->section('content') ?>
 
+<style>
+    .candidate-row {
+        align-items: stretch;
+    }
+
+    .candidate-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .candidate-image {
+        width: 100%;
+        height: 300px;
+        object-fit: contain;
+    }
+
+    .candidate-form {
+        margin-top: auto;
+    }
+
+    .candidate-select-btn {
+        width: 220px;
+        max-width: 100%;
+    }
+</style>
 
 <!-- Header -->
 <header id="header" class="header">
@@ -18,45 +44,36 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row candidate-row">
             <div class="col-lg-4">
-                <div class="text-container text-center mb-6">
-                    <img src=" <?php echo base_url('nubis/images/paslon_1_2026.png') ?> " width="400px" alt="" class="img-fluid">
-                    <br>
-                    <br>
-                    <form action="/Home/pilihan" method="POST">
+                <div class="text-container text-center mb-6 candidate-card">
+                    <img src=" <?php echo base_url('nubis/images/paslon_1_2026.png') ?> " alt="" class="img-fluid candidate-image">
+                    <form action="/Home/pilihan" method="POST" class="candidate-form">
                         <input type="hidden" name="kode" value="<?= session('kode') ?>">
                         <input type="hidden" name="pilihan" value="1">
-                        <button foccuss type="submit" class="btn btn-success btn-lg" onclick="return confirm('Anda Yakin dengan pilihan PASLON 01?');">PILIH PASLON 01</button>
-                        <br>
-                        <br>
-                        <br>&ensp;
+                        <button foccuss type="submit" class="btn btn-success btn-lg candidate-select-btn" onclick="return confirm('Anda Yakin dengan pilihan PASLON 01?');">PILIH PASLON 01</button>
                     </form>
                 </div> <!-- end of text-container -->
             </div> <!-- end of col -->
 
-            <div class="col-lg-4 mt-10">
-                <div class="text-container text-center">
-                    <img src="<?php echo base_url('nubis/images/paslon_2_2026.png') ?> " width="400px" alt="" class="img-fluid">
-                    <br>
-                    <br>
-                    <form action="/Home/pilihan" method="POST">
+            <div class="col-lg-4">
+                <div class="text-container text-center candidate-card">
+                    <img src="<?php echo base_url('nubis/images/paslon_2_2026.png') ?> " alt="" class="img-fluid candidate-image">
+                    <form action="/Home/pilihan" method="POST" class="candidate-form">
                         <input type="hidden" name="kode" value="<?= session('kode') ?>">
                         <input type="hidden" name="pilihan" value="2">
-                        <button type="submit" class="btn btn-success btn-lg" onclick="return confirm('Anda Yakin dengan pilihan PASLON 02?');">PILIH PASLON 02</button>
+                        <button type="submit" class="btn btn-success btn-lg candidate-select-btn" onclick="return confirm('Anda Yakin dengan pilihan PASLON 02?');">PILIH PASLON 02</button>
                     </form>
                 </div> <!-- end of text-container -->
             </div> <!-- end of col -->
           
-          	<div class="col-lg-4 mt-10">
-                <div class="text-container text-center">
-                    <img src="<?php echo base_url('nubis/images/paslon_3_2026.png') ?>" width="400px" alt="" class="img-fluid">
-                    <br>
-                    <br>
-                    <form action="/Home/pilihan" method="POST">
+            <div class="col-lg-4">
+                <div class="text-container text-center candidate-card">
+                    <img src="<?php echo base_url('nubis/images/paslon_3_2026.png') ?>" alt="" class="img-fluid candidate-image">
+                    <form action="/Home/pilihan" method="POST" class="candidate-form">
                         <input type="hidden" name="kode" value="<?= session('kode') ?>">
                         <input type="hidden" name="pilihan" value="3">
-                        <button type="submit" class="btn btn-success btn-lg" onclick="return confirm('Anda Yakin dengan pilihan PASLON 03?');">PILIH PASLON 03</button>
+                        <button type="submit" class="btn btn-success btn-lg candidate-select-btn" onclick="return confirm('Anda Yakin dengan pilihan PASLON 03?');">PILIH PASLON 03</button>
                     </form>
                 </div> <!-- end of text-container -->
             </div> <!-- end of col -->

@@ -1,6 +1,28 @@
 <?= $this->extend('/template/layout1') ?>
 <?= $this->section('content') ?>
 
+<style>
+    .quick-count-row {
+        align-items: stretch;
+    }
+
+    .quick-count-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .quick-count-image {
+        width: 100%;
+        height: 270px;
+        object-fit: contain;
+    }
+
+    .quick-count-number {
+        margin-top: auto;
+        padding-top: 12px;
+    }
+</style>
 
 <!-- Header -->
 <header id="header" class="header">
@@ -24,14 +46,12 @@
             <br>
 
 
-            <div class="row mb-5 ">
-                <div class="col-lg-4 ">
-                    <div class="text-container text-center mb-6">
+            <div class="row mb-5 quick-count-row">
+                <div class="col-lg-4">
+                    <div class="text-container text-center mb-6 quick-count-card">
                         <h2> PASLON 01 </h2>
-                        <img src=" <?php echo base_url('nubis/images/paslon_1_2026.png') ?> " class="img-fluid" alt="">
-                        <br>
-                        <br>
-                        <h1 class="h1-large" style="color:black;"> 
+                        <img src=" <?php echo base_url('nubis/images/paslon_1_2026.png') ?> " class="img-fluid quick-count-image" alt="">
+                        <h1 class="h1-large quick-count-number" style="color:black;">
                           <?php $db = db_connect();
                              $tb_hasil1 = $db->query("select count(id_pemilihan) as calon1 from pemilihan where pilihan=1");
                              $hasil1 = $tb_hasil1->getRow();
@@ -42,13 +62,11 @@
 
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
-                <div class="col-lg-4 mt-10">
-                    <div class="text-container text-center mb-6">
+                <div class="col-lg-4">
+                    <div class="text-container text-center mb-6 quick-count-card">
                         <h2> PASLON 02 </h2>
-                        <img src=" <?php echo base_url('nubis/images/paslon_2_2026.png') ?> " class="img-fluid" alt="">
-                        <br>
-                        <br>
-                        <h1 class="h1-large" style="color:black;"> 
+                        <img src=" <?php echo base_url('nubis/images/paslon_2_2026.png') ?> " class="img-fluid quick-count-image" alt="">
+                        <h1 class="h1-large quick-count-number" style="color:black;">
                           <?php $db = db_connect();
                              $tb_hasil1 = $db->query("select count(id_pemilihan) as calon1 from pemilihan where pilihan=2");
                              $hasil1 = $tb_hasil1->getRow();
@@ -58,13 +76,11 @@
                         <hr>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
-              	<div class="col-lg-4 mt-10">
-                    <div class="text-container text-center mb-6">
+                <div class="col-lg-4">
+                    <div class="text-container text-center mb-6 quick-count-card">
                         <h2> PASLON 03 </h2>
-                        <img src=" <?php echo base_url('nubis/images/paslon_3_2026.png') ?> " class="img-fluid" alt="">
-                        <br>
-                        <br>
-                        <h1 class="h1-large" style="color:black;"> 
+                        <img src=" <?php echo base_url('nubis/images/paslon_3_2026.png') ?> " class="img-fluid quick-count-image" alt="">
+                        <h1 class="h1-large quick-count-number" style="color:black;">
                           <?php $db = db_connect();
                              $tb_hasil1 = $db->query("select count(id_pemilihan) as calon1 from pemilihan where pilihan=3");
                              $hasil1 = $tb_hasil1->getRow();
